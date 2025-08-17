@@ -2,15 +2,30 @@
 <html>
 <head>
   <title>Pegasus Settings</title>
+  <link rel="stylesheet" href="options.css">
 </head>
 <body>
-  <h2>Save Your Details</h2>
-  <label>name: <input type="text" id="name"></label><br><br>
-  <label>phone: <input type="text" id="phone"></label><br><br>
-  <label>email: <input type="text" id="email"></label><br><br>
-  <label>address: <textarea id="address"></textarea></label><br><br>
-  <button id="save">Save</button>
-  <p id="status"></p>
+  <div class="container">
+    <h2>Save Your Details</h2>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name">
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="text" id="email">
+    </div>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address"></textarea>
+    </div>
+    <button id="save">Save</button>
+    <p id="status"></p>
+  </div>
   <script src="options.js"></script>
 </body>
 </html>
