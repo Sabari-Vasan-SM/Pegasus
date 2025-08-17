@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Pegasus - Google Form Auto Filler",
+  "version": "1.0",
+  "description": "Pegasus auto-fills Google Forms with your saved details.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
